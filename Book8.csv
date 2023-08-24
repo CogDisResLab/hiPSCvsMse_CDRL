@@ -1,0 +1,315 @@
+﻿Term,,,P-value.x,P-value.y,P-value.x.x,P-value.y.y,P-value.x.x.x,P-value.y.y.y
+Regulation Of Epithelial Cell Differentiation (GO:0030856),cell differentiation ,,NA,NA,NA,NA,0.0000882,NA
+Astrocyte Differentiation (GO:0048708),cell differentiation ,,NA,NA,NA,NA,0.000235,NA
+Skeletal System Development (GO:0001501),cell differentiation ,,0.00116362,NA,NA,NA,NA,0.000102
+Oocyte meiosis,cell differentiation ,,NA,NA,NA,NA,NA,0.000152
+Negative Regulation Of Muscle Cell Differentiation (GO:0051148),cell differentiation ,,NA,NA,NA,NA,NA,0.001067698
+Regulation Of Cell Differentiation (GO:0045595),cell differentiation ,,NA,NA,NA,NA,0.000377,NA
+Cardiac Conduction (GO:0061337),cell differentiation ,,NA,NA,NA,NA,NA,0.000121
+Regulation Of Cytokinesis (GO:0032465),cell differentiation ,,NA,NA,NA,NA,NA,0.0000348
+Progesterone-mediated oocyte maturation,cell differentiation ,,NA,NA,NA,NA,NA,0.000238
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Chromatin Organization (GO:0006325),chromatin process,,NA,NA,NA,0.0000211,NA,0.000119
+Chromatin Remodeling (GO:0006338),chromatin process,,NA,NA,NA,NA,NA,0.0000389
+Chromatin DNA Binding (GO:0031490),chromatin process,,NA,NA,NA,NA,NA,0.000195
+Heterochromatin Organization (GO:0070828),chromatin process,,NA,NA,NA,NA,NA,0.000635
+Chromosome (GO:0005694),chromatin process,,NA,NA,NA,NA,NA,0.000171
+"Condensed Chromosome, Centromeric Region (GO:0000779)",chromatin process,,NA,NA,NA,NA,NA,0.000278
+Condensed Nuclear Chromosome (GO:0000794),chromatin process,,NA,NA,NA,NA,NA,0.001020067
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Microtubule Cytoskeleton Organization Involved In Mitosis (GO:1902850),cytoskeleton,,NA,NA,NA,NA,NA,3.94E-16
+Microtubule Cytoskeleton (GO:0015630),cytoskeleton,,NA,NA,NA,NA,NA,9.25E-08
+Cytoskeleton-Dependent Cytokinesis (GO:0061640),cytoskeleton,,NA,NA,NA,NA,NA,0.000000155
+Microtubule Binding (GO:0008017),cytoskeleton,,NA,NA,NA,NA,NA,0.00000865
+Collagen Fibril Organization (GO:0030199),cytoskeleton,,NA,NA,NA,NA,NA,0.0000423
+Protein Depolymerization (GO:0051261),cytoskeleton,,NA,NA,NA,NA,NA,0.001020067
+Positive Regulation Of Arp2/3 Complex-Mediated Actin Nucleation (GO:2000601),cytoskeleton,,NA,NA,NA,NA,NA,0.001067698
+Microtubule Depolymerization (GO:0007019),cytoskeleton,,NA,NA,NA,NA,NA,0.001306009
+Microtubule (GO:0005874),cytoskeleton,,NA,NA,NA,NA,NA,0.002484385
+Positive Regulation Of Actin Nucleation (GO:0051127),cytoskeleton,,NA,NA,NA,NA,NA,0.00052
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Nucleosome Assembly (GO:0006334),DNA process,,NA,NA,NA,0.0000295,NA,NA
+Nucleosome Organization (GO:0034728),DNA process,,NA,NA,NA,0.0000786,NA,NA
+Nucleosome Binding (GO:0031491),DNA process,,NA,NA,NA,NA,NA,0.0000633
+Regulation Of DNA Replication (GO:0006275),DNA process,,NA,NA,NA,NA,NA,0.000594
+Nucleosomal DNA Binding (GO:0031492),DNA process,,NA,NA,NA,NA,NA,0.000919
+DNA-templated DNA Replication (GO:0006261),DNA process,,NA,NA,NA,NA,0.000367,NA
+DNA Damage Response (GO:0006974),DNA process,,NA,NA,NA,0.00000559,NA,0.001419507
+Nucleus (GO:0005634),DNA process,,NA,NA,NA,0.0000118,NA,1.18E-22
+DNA Binding (GO:0003677),DNA process,,NA,NA,NA,NA,NA,0.0000108
+Regulation Of DNA Metabolic Process (GO:0051052),DNA process,,NA,NA,NA,NA,NA,0.000028
+Regulation Of DNA Repair (GO:0006282),DNA process,,NA,NA,NA,NA,NA,0.0000547
+DNA Metabolic Process (GO:0006259),DNA process,,NA,NA,NA,NA,NA,0.000063
+Regulation Of DNA-templated Transcription (GO:0006355),DNA process,,NA,NA,NA,NA,NA,0.000305
+DNA Repair (GO:0006281),DNA process,,NA,NA,NA,NA,NA,0.000331
+Negative Regulation Of DNA-templated Transcription (GO:0045892),DNA process,,NA,NA,NA,NA,NA,0.001148443
+RNA Polymerase II Core Promoter Sequence-Specific DNA Binding (GO:0000979),DNA process,,NA,NA,NA,NA,NA,0.001430335
+DNA replication,DNA process,,NA,NA,NA,NA,0.0000283,NA
+DNA Replication (GO:0006260),DNA process,,NA,NA,NA,NA,0.0000294,NA
+protein-DNA Complex Assembly (GO:0065004),DNA process,,NA,NA,NA,0.0000611,NA,NA
+"Negative Regulation Of DNA-templated Transcription, Elongation (GO:0032785)",DNA process,,NA,NA,NA,0.000148,NA,NA
+Regulation Of Histone Deacetylation (GO:0031063),DNA process,,NA,NA,NA,NA,NA,0.000762
+Sin3 Complex (GO:0016580),DNA process,,NA,NA,NA,NA,NA,0.000762
+Sin3-type Complex (GO:0070822),DNA process,,NA,NA,NA,NA,NA,0.000762
+Histone Deacetylation (GO:0016575),DNA process,,NA,NA,NA,NA,NA,0.001430845
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Collagen-Containing Extracellular Matrix (GO:0062023),ECM,,0.000211,NA,NA,NA,0.00000215,5.84E-15
+Extracellular Matrix Organization (GO:0030198),ECM,,NA,NA,NA,NA,NA,6.08E-08
+Extracellular Structure Organization (GO:0043062),ECM,,NA,NA,NA,NA,NA,0.0000072
+ECM-receptor interaction,ECM,,NA,NA,NA,NA,0.00000465,NA
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Chemokine-Mediated Signaling Pathway (GO:0070098),chemokine response,,0.0000331,NA,NA,NA,NA,NA
+Cellular Response To Chemokine (GO:1990869),chemokine response,,0.0000403,NA,NA,NA,NA,NA
+Chemokine Activity (GO:0008009),chemokine response,,0.000131,NA,NA,NA,NA,NA
+Chemokine Receptor Binding (GO:0042379),chemokine response,,0.000196,NA,NA,NA,NA,NA
+Chemokine signaling pathway,chemokine response,,0.00024,NA,NA,NA,NA,NA
+CCR Chemokine Receptor Binding (GO:0048020),chemokine response,,0.001258841,NA,NA,NA,NA,NA
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Human papillomavirus infection,immune response,,NA,NA,NA,NA,0.0000361,NA
+Cytoplasmic Stress Granule (GO:0010494),immune response,,NA,NA,NA,NA,NA,0.0000617
+Systemic lupus erythematosus,immune response,,NA,NA,NA,1.51E-26,NA,NA
+Alcoholism,immune response,,NA,NA,NA,4.6E-23,NA,NA
+Neutrophil extracellular trap formation,immune response,,NA,NA,NA,8.68E-23,NA,NA
+Viral carcinogenesis,immune response,,NA,NA,NA,1.72E-11,NA,NA
+MHC Class II Protein Complex (GO:0042613),immune response,,NA,NA,NA,0.00000975,NA,NA
+MHC Protein Complex (GO:0042611),immune response,,NA,NA,NA,0.0000873,NA,NA
+Shigellosis,immune response,,NA,NA,NA,0.001275714,NA,NA
+Response To Interleukin-1 (GO:0070555),immune response,,0.0000365,NA,NA,NA,NA,NA
+Lymphocyte Chemotaxis (GO:0048247),immune response,,0.000106,NA,NA,NA,NA,NA
+Neutrophil Chemotaxis (GO:0030593),immune response,,0.000106,NA,NA,NA,NA,NA
+Eosinophil Chemotaxis (GO:0048245),immune response,,0.000117,NA,NA,NA,NA,NA
+Eosinophil Migration (GO:0072677),immune response,,0.000117,NA,NA,NA,NA,NA
+Granulocyte Chemotaxis (GO:0071621),immune response,,0.000134,NA,NA,NA,NA,NA
+Response To Tumor Necrosis Factor (GO:0034612),immune response,,0.000167,NA,NA,NA,NA,NA
+Neutrophil Migration (GO:1990266),immune response,,0.000181,NA,NA,NA,NA,NA
+Inflammatory Response (GO:0006954),immune response,,0.000247,NA,NA,NA,NA,NA
+Monocyte Chemotaxis (GO:0002548),immune response,,0.001055466,NA,NA,NA,NA,NA
+Lymphocyte Migration (GO:0072676),immune response,,0.000963,NA,NA,NA,NA,NA
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Estrogen 16-Alpha-Hydroxylase Activity (GO:0101020),metabolism,,0.00000219,NA,NA,NA,NA,NA
+Sterol Biosynthetic Process (GO:0016126),metabolism,,NA,0.0000211,NA,NA,NA,0.000185
+Response To UV-C (GO:0010225),metabolism,,NA,NA,NA,NA,NA,0.00000146
+Response To Leptin (GO:0044321),metabolism,,NA,NA,NA,NA,NA,0.000132
+Glycosaminoglycan biosynthesis,metabolism,,NA,NA,NA,NA,NA,0.000149
+Regulation Of Superoxide Metabolic Process (GO:0090322),metabolism,,NA,NA,NA,NA,0.000235,NA
+Secondary Alcohol Biosynthetic Process (GO:1902653),metabolism,,NA,0.000122,NA,NA,NA,NA
+Cholesterol Biosynthetic Process (GO:0006695),metabolism,,NA,0.00015,NA,NA,NA,NA
+Retinoic Acid 4-Hydroxylase Activity (GO:0008401),metabolism,,0.00032,NA,NA,NA,NA,NA
+Steroid Hydroxylase Activity (GO:0008395),metabolism,,0.000453,NA,NA,NA,NA,NA
+Heparan Sulfate Sulfotransferase Activity (GO:0034483),metabolism,,0.00103956,NA,NA,NA,NA,NA
+Intracellular Organelle Lumen (GO:0070013),metabolism,,NA,NA,NA,NA,0.000966,NA
+Necroptosis,metabolism,,NA,NA,NA,0.0000915,NA,NA
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Regulation Of Ubiquitin Protein Ligase Activity (GO:1904666),protein metabolism,,NA,NA,NA,NA,NA,0.001306009
+"Protein Localization To Chromosome, Centromeric Region (GO:0071459)",protein metabolism,,NA,NA,NA,NA,NA,0.001830646
+NLS-bearing Protein Import Into Nucleus (GO:0006607),protein metabolism,,NA,NA,NA,NA,NA,0.001306009
+Protein Ubiquitination (GO:0016567),protein metabolism,,NA,NA,NA,NA,NA,0.00000123
+Ubiquitin-Dependent Protein Catabolic Process (GO:0006511),protein metabolism,,NA,NA,NA,NA,NA,0.00000465
+Ubiquitin-Like Protein Transferase Activity (GO:0019787),protein metabolism,,NA,NA,NA,NA,NA,0.00000956
+Proteasome-Mediated Ubiquitin-Dependent Protein Catabolic Process (GO:0043161),protein metabolism,,NA,NA,NA,NA,NA,0.0000383
+Proteasomal Protein Catabolic Process (GO:0010498),protein metabolism,,NA,NA,NA,NA,NA,0.0000422
+Ubiquitin-Protein Transferase Activity (GO:0004842),protein metabolism,,NA,NA,NA,NA,NA,0.0000635
+Negative Regulation Of Transferase Activity (GO:0051348),protein metabolism,,NA,NA,NA,NA,NA,0.0000807
+Protein Autoubiquitination (GO:0051865),protein metabolism,,NA,NA,NA,NA,NA,0.0000915
+Protein Modification By Small Protein Conjugation (GO:0032446),protein metabolism,,NA,NA,NA,NA,NA,0.000127
+Ubiquitin-Like Protein Ligase Activity (GO:0061659),protein metabolism,,NA,NA,NA,NA,NA,0.000158
+Ubiquitin mediated proteolysis,protein metabolism,,NA,NA,NA,NA,NA,0.000205
+Positive Regulation Of Protein Deacetylation (GO:0090312),protein metabolism,,NA,NA,NA,NA,NA,0.000238
+Ubiquitin-Ubiquitin Ligase Activity (GO:0034450),protein metabolism,,NA,NA,NA,NA,NA,0.000238
+Protein K11-linked Ubiquitination (GO:0070979),protein metabolism,,NA,NA,NA,NA,NA,0.00025
+Ubiquitin Protein Ligase Activity (GO:0061630),protein metabolism,,NA,NA,NA,NA,NA,0.000348
+Protein K63-linked Deubiquitination (GO:0070536),protein metabolism,,NA,NA,NA,NA,NA,0.000725
+Protein Polyubiquitination (GO:0000209),protein metabolism,,NA,NA,NA,NA,NA,0.00075
+Negative Regulation Of Protein Ubiquitination (GO:0031397),protein metabolism,,NA,NA,NA,NA,NA,0.00077
+Modification-Dependent Protein Catabolic Process (GO:0019941),protein metabolism,,NA,NA,NA,NA,NA,0.000984
+Positive Regulation Of Protein Ubiquitination (GO:0031398),protein metabolism,,NA,NA,NA,NA,NA,0.001991618
+Intracellular Membrane-Bounded Organelle (GO:0043231),protein metabolism,,NA,NA,NA,0.0000219,NA,1.24E-18
+Positive Regulation Of Ubiquitin Protein Ligase Activity (GO:1904668),protein metabolism,,NA,NA,NA,NA,NA,0.002003488
+Mitochondrial Ribosome (GO:0005761),protein metabolism,,NA,NA,NA,0.000412,NA,NA
+Establishment Of Protein Localization To Extracellular Region (GO:0035592),protein metabolism,,NA,0.00000386,NA,NA,NA,NA
+Protein Secretion (GO:0009306),protein metabolism,,NA,0.0000106,NA,NA,NA,NA
+Golgi Lumen (GO:0005796),protein metabolism,,NA,NA,NA,NA,0.001483293,NA
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+RNA Processing (GO:0006396),RNA process,,NA,NA,NA,NA,NA,0.001004852
+Regulation Of RNA Splicing (GO:0043484),RNA process,,NA,NA,NA,NA,NA,0.000105
+"Nuclear-Transcribed mRNA Catabolic Process, Deadenylation-Dependent Decay (GO:0000288)",RNA process,,NA,NA,NA,NA,NA,0.000635
+mRNA Binding (GO:0003729),RNA process,,NA,NA,NA,NA,NA,0.001291985
+"RNA Splicing, Via Transesterification Reactions (GO:0000375)",RNA process,,NA,NA,NA,NA,NA,0.001842988
+Regulation Of Transcription Elongation By RNA Polymerase II (GO:0034243),RNA process,,NA,NA,NA,0.00000295,NA,NA
+RNA transport,RNA process,,NA,NA,0.0000292,NA,NA,NA
+Nuclear-Transcribed mRNA Catabolic Process (GO:0000956),RNA process,,NA,NA,NA,NA,NA,0.0000814
+Regulation Of mRNA Catabolic Process (GO:0061013),RNA process,,NA,NA,NA,NA,NA,0.000156
+mRNA Catabolic Process (GO:0006402),RNA process,,NA,NA,NA,NA,NA,0.000352
+Precatalytic Spliceosome (GO:0071011),RNA process,,NA,NA,NA,NA,NA,0.001930155
+Spliceosome,RNA process,,NA,NA,0.000196,NA,NA,NA
+RNA Binding (GO:0003723),RNA process,,NA,NA,NA,NA,NA,4.64E-09
+Regulation Of Transcription By RNA Polymerase II (GO:0006357),RNA process,,NA,NA,NA,NA,NA,0.000775
+Negative Regulation Of Transcription By RNA Polymerase II (GO:0000122),RNA process,,NA,NA,NA,NA,NA,0.000829
+Negative Regulation Of Nucleic Acid-Templated Transcription (GO:1903507),RNA process,,NA,NA,NA,NA,NA,0.000834
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Calcium-Dependent Cell-Cell Adhesion Via Plasma Membrane Cell Adhesion Molecules (GO:0016339),signal transduction,,NA,0.00000146,NA,NA,NA,NA
+Vesicle Cargo Loading (GO:0035459),signal transduction,,NA,0.000000594,NA,NA,NA,NA
+Nuclear Receptor Binding (GO:0016922),signal transduction,,NA,NA,NA,NA,NA,0.0000714
+Negative Regulation Of Pathway-Restricted SMAD Protein Phosphorylation (GO:0060394),signal transduction,,NA,NA,NA,NA,NA,0.0000725
+Regulation Of Cyclin-Dependent Protein Serine/Threonine Kinase Activity (GO:0000079),signal transduction,,NA,NA,NA,NA,NA,0.000103
+Protein Serine/Threonine Kinase Activity (GO:0004674),signal transduction,,NA,NA,NA,NA,NA,0.000000516
+Regulation Of Pathway-Restricted SMAD Protein Phosphorylation (GO:0060393),signal transduction,,NA,NA,NA,NA,NA,0.000000686
+Protein Phosphorylation (GO:0006468),signal transduction,,NA,NA,NA,NA,NA,0.000108
+Cardiac Muscle Cell Action Potential (GO:0086001),signal transduction,,NA,NA,NA,NA,NA,0.000118
+Protein Modification Process (GO:0036211),signal transduction,,NA,NA,NA,NA,NA,0.00014
+Cyclin-Dependent Protein Kinase Holoenzyme Complex (GO:0000307),signal transduction,,NA,NA,NA,NA,NA,0.000176
+Kinase Binding (GO:0019900),signal transduction,,NA,NA,NA,NA,NA,0.000347
+Peptidyl-Serine Phosphorylation (GO:0018105),signal transduction,,NA,NA,NA,NA,NA,0.000541
+Cyclin-Dependent Protein Serine/Threonine Kinase Regulator Activity (GO:0016538),signal transduction,,NA,NA,NA,NA,NA,0.000657
+Signal Sequence Binding (GO:0005048),signal transduction,,NA,NA,NA,NA,NA,0.000971
+Phosphorylation (GO:0016310),signal transduction,,NA,NA,NA,NA,NA,0.00101984
+Cellular Response To Leptin Stimulus (GO:0044320),signal transduction,,NA,NA,NA,NA,NA,0.001067698
+Regulation Of Cellular Response To Stress (GO:0080135),signal transduction,,NA,NA,NA,NA,NA,0.001522105
+PI3K-Akt signaling pathway,signal transduction,,NA,NA,NA,NA,0.0000607,NA
+Focal adhesion,signal transduction,,NA,NA,NA,NA,0.000467,NA
+AGE-RAGE signaling pathway in diabetic complications,signal transduction,,NA,NA,NA,NA,0.001483293,NA
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Spindle Microtubule (GO:0005876),spindle,,NA,NA,NA,NA,NA,0.000194
+Regulation Of Spindle Assembly (GO:0090169),spindle,,NA,NA,NA,NA,NA,0.00025
+Positive Regulation Of Spindle Assembly (GO:1905832),spindle,,NA,NA,NA,NA,NA,0.000488
+Regulation Of Spindle Organization (GO:0090224),spindle,,NA,NA,NA,NA,NA,0.000544
+Positive Regulation Of Spindle Checkpoint (GO:0090232),spindle,,NA,NA,NA,NA,NA,0.0000734
+Spindle Assembly (GO:0051225),spindle,,NA,NA,NA,NA,NA,0.0000113
+Regulation Of Attachment Of Spindle Microtubules To Kinetochore (GO:0051988),spindle,,NA,NA,NA,NA,NA,0.0000153
+Spindle Assembly Checkpoint Signaling (GO:0071173),spindle,,NA,NA,NA,NA,NA,0.0000967
+Mitotic Spindle Organization (GO:0007052),spindle,,NA,NA,NA,NA,NA,2.6E-18
+Spindle (GO:0005819),spindle,,NA,NA,NA,NA,NA,5.5E-16
+Mitotic Spindle (GO:0072686),spindle,,NA,NA,NA,NA,NA,1.08E-13
+Mitotic Spindle Assembly (GO:0090307),spindle,,NA,NA,NA,NA,NA,1.69E-12
+Mitotic Spindle Elongation (GO:0000022),spindle,,NA,NA,NA,NA,NA,5.28E-08
+Mitotic Spindle Midzone Assembly (GO:0051256),spindle,,NA,NA,NA,NA,NA,5.28E-08
+Regulation Of Mitotic Spindle Organization (GO:0060236),spindle,,NA,NA,NA,NA,NA,0.00000449
+Regulation Of Mitotic Cell Cycle Spindle Assembly Checkpoint (GO:0090266),spindle,,NA,NA,NA,NA,NA,0.0000173
+Positive Regulation Of Mitotic Cell Cycle Spindle Assembly Checkpoint (GO:0090267),spindle,,NA,NA,NA,NA,NA,0.0000734
+Mitotic Spindle Checkpoint Signaling (GO:0071174),spindle,,NA,NA,NA,NA,NA,0.0000967
+Establishment Of Mitotic Spindle Localization (GO:0040001),spindle,,NA,NA,NA,NA,NA,0.000919
+Attachment Of Mitotic Spindle Microtubules To Kinetochore (GO:0051315),spindle,,NA,NA,NA,NA,NA,0.001430335
+Mitotic Spindle Assembly Checkpoint Signaling (GO:0007094),spindle,,NA,NA,NA,NA,NA,0.0000967
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Regulation Of Cell Cycle Process (GO:0010564),Cell cycle,,NA,NA,NA,NA,NA,5.45E-08
+Regulation Of Cell Cycle (GO:0051726),Cell cycle,,NA,NA,NA,NA,NA,8.26E-08
+Positive Regulation Of Metaphase/Anaphase Transition Of Cell Cycle (GO:1902101),Cell cycle,,NA,NA,NA,NA,NA,0.00000018
+Positive Regulation Of Mitotic Metaphase/Anaphase Transition (GO:0045842),Cell cycle,,NA,NA,NA,NA,NA,0.00000018
+Positive Regulation Of Cytokinesis (GO:0032467),Cell cycle,,NA,NA,NA,NA,NA,0.000000688
+Cell Cycle G2/M Phase Transition (GO:0044839),Cell cycle,,NA,NA,NA,NA,NA,0.000000982
+Condensed Chromosome (GO:0000793),Cell cycle,,NA,NA,NA,NA,NA,0.00000207
+Establishment Of Chromosome Localization (GO:0051303),Cell cycle,,NA,NA,NA,NA,NA,0.00000265
+Regulation Of Mitotic Metaphase/Anaphase Transition (GO:0030071),Cell cycle,,NA,NA,NA,NA,NA,0.00000282
+G2/M Transition Of Mitotic Cell Cycle (GO:0000086),Cell cycle,,NA,NA,NA,NA,NA,0.00000322
+Regulation Of Chromosome Segregation (GO:0051983),Cell cycle,,NA,NA,NA,NA,NA,0.00000391
+Nuclear Chromosome Segregation (GO:0098813),Cell cycle,,NA,NA,NA,NA,NA,0.00000985
+Anaphase-Promoting Complex-Dependent Catabolic Process (GO:0031145),Cell cycle,,NA,NA,NA,NA,NA,0.000013
+Anaphase-Promoting Complex (GO:0005680),Cell cycle,,NA,NA,NA,NA,NA,0.0000726
+Chromosome Condensation (GO:0030261),Cell cycle,,NA,NA,NA,NA,NA,0.000107
+Nuclear Chromosome (GO:0000228),Cell cycle,,NA,NA,NA,NA,NA,0.000118
+Regulation Of G2/M Transition Of Mitotic Cell Cycle (GO:0010389),Cell cycle,,NA,NA,NA,NA,NA,0.000244
+Kinetochore Assembly (GO:0051382),Cell cycle,,NA,NA,NA,NA,NA,0.000278
+Positive Regulation Of Cell Cycle G2/M Phase Transition (GO:1902751),Cell cycle,,NA,NA,NA,NA,NA,0.00032
+Positive Regulation Of Cell Division (GO:0051781),Cell cycle,,NA,NA,NA,NA,NA,0.000352
+Negative Regulation Of Telomere Maintenance Via Telomerase (GO:0032211),Cell cycle,,NA,NA,NA,NA,NA,0.000379
+Centromere Complex Assembly (GO:0034508),Cell cycle,,NA,NA,NA,NA,NA,0.000389
+Nuclear Pore Organization (GO:0006999),Cell cycle,,NA,NA,NA,NA,NA,0.000389
+Nuclear Pore Complex Assembly (GO:0051292),Cell cycle,,NA,NA,NA,NA,NA,0.00052
+Cell Cycle G1/S Phase Transition (GO:0044843),Cell cycle,,NA,NA,NA,NA,NA,0.000536
+Regulation Of Ubiquitin-Protein Transferase Activity (GO:0051438),Cell cycle,,NA,NA,NA,NA,NA,0.000566
+Nucleus Organization (GO:0006997),Cell cycle,,NA,NA,NA,NA,NA,0.001734022
+Positive Regulation Of Cell Cycle Process (GO:0090068),Cell cycle,,NA,NA,NA,NA,NA,1.39E-14
+Intracellular Non-Membrane-Bounded Organelle (GO:0043232),Cell cycle,,NA,NA,NA,NA,NA,0.000000221
+Nuclear Lumen (GO:0031981),Cell cycle,,NA,NA,NA,NA,NA,0.000113
+Non-Membrane-Bounded Organelle Assembly (GO:0140694),Cell cycle,,NA,NA,NA,NA,NA,0.000115
+Nucleolus (GO:0005730),Cell cycle,,NA,NA,NA,NA,NA,0.000194
+Positive Regulation Of Transcription By RNA Polymerase II (GO:0045944),Cell cycle,,NA,NA,NA,NA,NA,0.001777116
+ISWI-type Complex (GO:0031010),Cell cycle,,NA,NA,NA,NA,NA,0.002175704
+External Encapsulating Structure Organization (GO:0045229),Cell cycle,,NA,NA,NA,NA,NA,0.00000854
+Negative Regulation Of Telomere Maintenance Via Telomere Lengthening (GO:1904357),Cell cycle,,NA,NA,NA,NA,NA,0.00000896
+Positive Regulation Of Chromosome Separation (GO:1905820),Cell cycle,,NA,NA,NA,NA,NA,0.0000196
+Regulation Of Telomere Maintenance Via Telomerase (GO:0032210),Cell cycle,,NA,NA,NA,NA,NA,0.0000242
+Positive Regulation Of Chromosome Segregation (GO:0051984),Cell cycle,,NA,NA,NA,NA,NA,0.0000291
+Kinetochore Organization (GO:0051383),Cell cycle,,NA,NA,NA,NA,NA,0.0000357
+Nuclear Localization Sequence Binding (GO:0008139),Cell cycle,,NA,NA,NA,NA,NA,0.0000467
+P-body (GO:0000932),Cell cycle,,NA,NA,NA,NA,NA,0.000607
+Mitotic G2/M Transition Checkpoint (GO:0044818),Cell cycle,,NA,NA,NA,NA,NA,0.000657
+Positive Regulation Of Chromosome Organization (GO:2001252),Cell cycle,,NA,NA,NA,NA,NA,0.000725
+Positive Regulation Of G2/M Transition Of Mitotic Cell Cycle (GO:0010971),Cell cycle,,NA,NA,NA,NA,NA,0.000762
+G1/S Transition Of Mitotic Cell Cycle (GO:0000082),Cell cycle,,NA,NA,NA,NA,NA,0.000994
+Cell cycle,Cell cycle,,NA,NA,NA,NA,NA,1.11E-11
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Mitotic Sister Chromatid Segregation (GO:0000070),mitotic process,,NA,NA,NA,NA,NA,6.41E-19
+Positive Regulation Of Mitotic Sister Chromatid Separation (GO:1901970),mitotic process,,NA,NA,NA,NA,NA,1.79E-11
+Mitotic Cell Cycle Phase Transition (GO:0044772),mitotic process,,NA,NA,NA,NA,NA,2.21E-10
+Metaphase Plate Congression (GO:0051310),mitotic process,,NA,NA,NA,NA,NA,4.6E-10
+Mitotic Cytokinesis (GO:0000281),mitotic process,,NA,NA,NA,NA,NA,1.39E-09
+Positive Regulation Of Mitotic Cell Cycle Phase Transition (GO:1901992),mitotic process,,NA,NA,NA,NA,NA,5.45E-09
+Mitotic Metaphase Plate Congression (GO:0007080),mitotic process,,NA,NA,NA,NA,NA,1.69E-08
+Regulation Of Mitotic Cell Cycle (GO:0007346),mitotic process,,NA,NA,NA,NA,NA,0.000000021
+Sister Chromatid Segregation (GO:0000819),mitotic process,,NA,NA,NA,NA,NA,9.21E-08
+Mitotic Nuclear Division (GO:0140014),mitotic process,,NA,NA,NA,NA,NA,0.000000129
+Mitotic Chromosome Condensation (GO:0007076),mitotic process,,NA,NA,NA,NA,NA,0.00000529
+Positive Regulation Of Mitotic Nuclear Division (GO:0045840),mitotic process,,NA,NA,NA,NA,NA,0.0000075
+Mitotic DNA Damage Checkpoint Signaling (GO:0044773),mitotic process,,NA,NA,NA,NA,NA,0.0000173
+Negative Regulation Of Mitotic Metaphase/Anaphase Transition (GO:0045841),mitotic process,,NA,NA,NA,NA,NA,0.0000289
+Mitotic Sister Chromatid Cohesion (GO:0007064),mitotic process,,NA,NA,NA,NA,NA,0.0000468
+Positive Regulation Of Mitotic Cytokinesis (GO:1903490),mitotic process,,NA,NA,NA,NA,NA,0.000173
+Establishment Of Mitotic Sister Chromatid Cohesion (GO:0034087),mitotic process,,NA,NA,NA,NA,NA,0.000488
+Regulation Of Mitotic Cytokinesis (GO:1902412),mitotic process,,NA,NA,NA,NA,NA,0.000488
+Regulation Of Mitotic Sister Chromatid Separation (GO:0010965),mitotic process,,NA,NA,NA,NA,NA,0.00052
+Regulation Of Mitotic Nuclear Division (GO:0007088),mitotic process,,NA,NA,NA,NA,NA,0.001084826
+Mitotic DNA Integrity Checkpoint Signaling (GO:0044774),mitotic process,,NA,NA,NA,NA,NA,0.001430335
+Mitotic G2 DNA Damage Checkpoint Signaling (GO:0007095),mitotic process,,NA,NA,NA,NA,NA,0.001669856

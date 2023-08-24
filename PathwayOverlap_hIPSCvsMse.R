@@ -1,14 +1,12 @@
-#Jae overlap file
-# install.packages("Geneoverlap")
-# install.packages("BiocManager", repos = "https://cloud.r-project.org")
-# BiocManager::install("Geneoverlap")
-library(GeneOverlap)
-# install.packages("dplyr")
-library(dplyr)
-# install.packages("ggplot2")
+#FGSEA
+library(fgsea)
+library(data.table)
 library(ggplot2)
+library(tidyr)
+library(KEGGREST)
 library(readr)
-#import csv's
+library(tidyverse)
+
 Astrocytes_Mono_VS_control_GSE191248_ <- read_csv("Astrocytes  (Mono) VS control(GSE191248).csv")
 SCZVSControl_CorticolNeu_GSE182875_ <- read_csv("SCZVSControl(CorticolNeu)(GSE182875).csv")
 With_SCZ_VS_Without_SCZ_Astrocytes_GSE191248_ <- read_csv("With SCZ VS Without SCZ (Astrocytes)(GSE191248).csv")
@@ -16,12 +14,8 @@ Without_SCZ_and_Control_Astrocytes_GSE191248_ <- read_csv("Without SCZ and Contr
 Mouse_Astrocyte_E2_knockdown <- read_csv("Mouse_Astrocyte_E2_knockdown.csv")
 Mouse_neuron_E2_knockdown <- read_csv("Mouse_neuron_E2_knockdown.csv")
 
-#data wrangling the csv data sets and selecting the 200 highest values for upregulation and downregulation
-  #selected -> gene name(symbol or hsapien_homoloh...), pvalue, and log2FoldChange, 
-  #filter -> NAs and onyl significant values (pvalue <= 0.05)
-  #data is arranged creating table in increasing order and taking the top 200 for the downregulation and bottom 200 for the upregulation
 #HUMAN
-    #astrocyte
+#astrocyte
 upreg_Astrocytes_Mono_VS_control_GSE191248_ <- 
   select(Astrocytes_Mono_VS_control_GSE191248_, Symbol, pvalue, log2FoldChange) %>%
   filter((!is.na(Symbol)), pvalue < 0.05, log2FoldChange > 0) %>% 
@@ -52,7 +46,7 @@ downreg_Without_SCZ_and_Control_Astrocytes_GSE191248_  <-
   filter((!is.na(Symbol)), pvalue < 0.05, log2FoldChange < 0) %>% 
   arrange(log2FoldChange)
 downreg_Without_SCZ_and_Control_Astrocytes_GSE191248_ 
-    #neuron
+#neuron
 upreg_SCZVSControl_CorticolNeu_GSE182875_ <- 
   select(SCZVSControl_CorticolNeu_GSE182875_, Symbol, pvalue, log2FoldChange) %>%
   filter(pvalue < 0.05, log2FoldChange > 0) %>% 
@@ -64,7 +58,7 @@ downreg_SCZVSControl_CorticolNeu_GSE182875_ <-
   arrange(log2FoldChange)
 downreg_SCZVSControl_CorticolNeu_GSE182875_
 #MOUSE
-    #astrocyte
+#astrocyte
 upreg_Mouse_Astrocyte_E2_knockdown <- 
   select(Mouse_Astrocyte_E2_knockdown, hsapiens_homolog_associated_gene_name, pvalue, log2FoldChange) %>%
   filter(pvalue < 0.05, !is.na(hsapiens_homolog_associated_gene_name), log2FoldChange > 0) %>% 
@@ -75,7 +69,7 @@ downreg_Mouse_Astrocyte_E2_knockdown <-
   filter(pvalue < 0.05, !is.na(hsapiens_homolog_associated_gene_name), log2FoldChange < 0) %>% 
   arrange(log2FoldChange)
 downreg_Mouse_Astrocyte_E2_knockdown
-    #neuron
+#neuron
 upreg_Mouse_neuron_E2_knockdown <- 
   select(Mouse_neuron_E2_knockdown, hsapiens_homolog_associated_gene_name, pvalue, log2FoldChange) %>%
   filter(pvalue < 0.05, !is.na(hsapiens_homolog_associated_gene_name), log2FoldChange > 0) %>% 
@@ -87,35 +81,6 @@ downreg_Mouse_neuron_E2_knockdown <-
   arrange(log2FoldChange)
 downreg_Mouse_neuron_E2_knockdown
 
-#making the axis of the heatmap
-  #two lists one for all Human dataset and one for Mouse datasets
-  #removed SCZvsnonSCZ because the gene smaple in 93-98 which is significantly less than the 200 of the others
-Human <- list(hIPSC_N_SCZ_1_up = upreg_SCZVSControl_CorticolNeu_GSE182875_$Symbol,
-              hIPSC_N_SCZ_1_down = downreg_SCZVSControl_CorticolNeu_GSE182875_$Symbol,
-              hIPSC_Ast_SCZ_1_up = upreg_Astrocytes_Mono_VS_control_GSE191248_$Symbol,
-              hIPSC_Ast_SCZ_1_down = downreg_Astrocytes_Mono_VS_control_GSE191248_$Symbol,
-              hIPSC_Ast_SCZ_2_up = upreg_With_SCZ_VS_Without_SCZ_Astrocytes_GSE191248_$Symbol,
-              hIPSC_Ast_SCZ_2_down = downreg_With_SCZ_VS_Without_SCZ_Astrocytes_GSE191248_$Symbol,
-              hIPSC_Ast_SCZ_3_up = upreg_Without_SCZ_and_Control_Astrocytes_GSE191248_$Symbol, 
-              hIPSC_Ast_SCZ_3_down = downreg_Without_SCZ_and_Control_Astrocytes_GSE191248_$Symbol)
-Mouse <- list(mse_N_E2KO_up = upreg_Mouse_neuron_E2_knockdown$hsapiens_homolog_associated_gene_name,
-              mse_N_E2KO_down = downreg_Mouse_neuron_E2_knockdown$hsapiens_homolog_associated_gene_name, 
-              mse_Ast_E2KO_up = upreg_Mouse_Astrocyte_E2_knockdown$hsapiens_homolog_associated_gene_name,
-              mse_Ast_E2KO_down = downreg_Mouse_Astrocyte_E2_knockdown$hsapiens_homolog_associated_gene_name)
-
-background_size <- length(Reduce(union, c(Mouse, Human)))
-
-#creating gene overlap
-gom.obj <- newGOM(Human, Mouse, genome.size = background_size)
-gom.obj
-#creating heatmap
-# dev.off()
-par(mar = c(1, 1, 1, 1))
-drawHeatmap(gom.obj, 
-            what="odds.ratio",
-            ncolused=9, grid.col="Oranges", note.col="black")
-
-#All Mouse and Human gene names
 SCZ_vs_HC_up_HuAst <- matrix(upreg_Astrocytes_Mono_VS_control_GSE191248_$Symbol, ncol =1)
 SCZ_vs_HC_up_HuAst
 SCZ_vs_HC_down_HuAst <- matrix(downreg_Astrocytes_Mono_VS_control_GSE191248_$Symbol, ncol =1)
@@ -141,3 +106,66 @@ E2KO_up_MseN <- matrix(upreg_Mouse_neuron_E2_knockdown$hsapiens_homolog_associat
 E2KO_up_MseN
 E2KO_down_MseN <- matrix(downreg_Mouse_neuron_E2_knockdown$hsapiens_homolog_associated_gene_name, ncol =1)
 E2KO_down_MseN
+
+E2KO_MseAst_pathway <- read_csv("E2KO_MseAst_pathway.csv")
+E2KO_MseN_pathway <- read_csv("E2KO_MseN_pathway.csv")
+nonSCZ_vs_HC_HuAst_pathway <- read_csv("nonSCZ_vs_HC_HuAst_pathway.csv")
+SCZ_vs_HC_HuAst_pathway <- read_csv("SCZ_vs_HC_HuAst_pathway.csv")
+SCZ_vs_nonSCZ_HuAst_pathway <- read_csv("SCZ_vs_nonSCZ_HuAst_pathway.csv")
+SCZ_vs_HC_HuN_pathway <- read_csv("SCZ_vs_HC_HuN_pathway.csv")
+
+#Adjusted pvalue used because Pvalue yields too many pathways
+E2KO_MseAst_pathway_filtered <- E2KO_MseAst_pathway %>% 
+  filter(`Adjusted P-value` < 0.05)
+E2KO_MseAst_pathway_filtered
+E2KO_MseN_pathway_filtered <- E2KO_MseN_pathway %>%
+  filter(`Adjusted P-value` < 0.05)
+E2KO_MseN_pathway_filtered
+nonSCZ_vs_HC_HuAst_pathway_filtered <- nonSCZ_vs_HC_HuAst_pathway %>%
+  filter(`Adjusted P-value` < 0.05)
+nonSCZ_vs_HC_HuAst_pathway_filtered
+SCZ_vs_HC_HuAst_pathway_filtered <- SCZ_vs_HC_HuAst_pathway %>%
+  filter(`Adjusted P-value` < 0.05)
+SCZ_vs_HC_HuAst_pathway_filtered
+SCZ_vs_nonSCZ_HuAst_pathway_filtered <- SCZ_vs_nonSCZ_HuAst_pathway %>%
+  filter(`Adjusted P-value` < 0.05)
+SCZ_vs_nonSCZ_HuAst_pathway_filtered
+SCZ_vs_HC_HuN_pathway_filtered <- SCZ_vs_HC_HuN_pathway %>%
+  filter(`Adjusted P-value` < 0.05) 
+SCZ_vs_HC_HuN_pathway_filtered
+
+pvalue_columns <- c("P-value.x", "P-value.y","P-value.x.x","P-value.y.y","P-value.x.x.x","P-value.y.y.y")
+
+#overlapping of similar pathways
+Pathways <- E2KO_MseAst_pathway_filtered %>% 
+  full_join(E2KO_MseN_pathway_filtered, by = join_by(Term)) %>% 
+  full_join(nonSCZ_vs_HC_HuAst_pathway_filtered, by = join_by(Term)) %>% 
+  full_join(SCZ_vs_HC_HuAst_pathway_filtered, by = join_by(Term)) %>% 
+  full_join(SCZ_vs_nonSCZ_HuAst_pathway_filtered, by = join_by(Term)) %>% 
+  full_join(SCZ_vs_HC_HuN_pathway_filtered, by = join_by(Term))
+
+#conversion to -log10
+logHeatmap <- Pathways %>%  
+  mutate(across(all_of(pvalue_columns), ~ -log10(.), .names = "log10_{col}" )) %>%
+  select(`log10_P-value.x`, `log10_P-value.y`, `log10_P-value.x.x`, `log10_P-value.y.y`, `log10_P-value.x.x.x`, `log10_P-value.y.y.y`) %>%
+  mutate_all(~ ifelse(is.na(.), 0, .))
+  
+#heatmap
+library(ComplexHeatmap)
+library(circlize)
+colorscale <- colorRamp2(c(min(logHeatmap), 6, max(logHeatmap)),
+                         c("white", "red", "maroon"))
+Heatmap(fulljoin, col = colorscale)  
+
+csv_file = "PathwaysMerged.csv" 
+write.csv(Pathways, file = csv_file, row.names = FALSE)
+
+Pathway_edit <- read_csv("Book8.csv")
+Pathway_bundled <- Pathway_edit %>%
+  mutate(across(all_of(pvalue_columns), ~ -log10(.), .names = "log10_{col}" )) %>%
+  select(`log10_P-value.x`, `log10_P-value.y`, `log10_P-value.x.x`, `log10_P-value.y.y`, `log10_P-value.x.x.x`, `log10_P-value.y.y.y`) %>%
+  mutate_all(~ ifelse(is.na(.), 0, .))
+
+Heatmap(Pathway_bundled, col = colorscale, 
+        row_order = order(as.numeric(gsub("row", "", rownames(Pathway_bundled)))), 
+        column_order = order(as.numeric(gsub("column", "", colnames(Pathway_bundled)))))
